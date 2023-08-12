@@ -5,7 +5,7 @@ import myLogo from "../../../constants/images/logo/mylogo.png";
 export const Header: FC = () => {
   return (
     <nav className="header-content">
-      <img src={myLogo} alt="my-logo" className="header-logo" />
+      <img src={myLogo} alt="my-logo" />
       <div className="nav-item">
         <Link className="nav-link" to="/path">
           Home
