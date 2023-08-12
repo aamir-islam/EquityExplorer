@@ -1,26 +1,45 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "baseUrl": "src",
     "allowJs": true,
-    "skipLibCheck": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
     "isolatedModules": true,
+    "lib": ["dom", "ES5", "ES2015", "ES2017", "ES2018", "ESNext"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
     "noEmit": true,
-    "jsx": "react-jsx"
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext",
+    "jsx": "react-jsx",
+    "types": ["jest", "node", "testing-library__jest-dom"],
+    "paths": {
+      "@common": ["common"],
+      "@common/*": ["common/*"],
+      "@components": ["components"],
+      "@components/*": ["components/*"],
+      "@theme": ["theme"],
+      "@theme/*": ["theme/*"],
+      "@utils": ["utils"],
+      "@utils/*": ["utils/*"],
+      "@test-utils": ["utils/test-utils"],
+      "@styled": ["utils/styled"],
+      "@slice": ["slice"],
+      "@slice/*": ["slice/*"],
+      "@routes": ["routes"],
+      "@routes/*": ["routes/*"],
+      "@pages": ["pages"],
+      "@pages/*": ["pages/*"],
+      "@services/*": ["services/*"],
+      "@services": ["services"],
+      "@constants": ["constants"],
+      "@constants/*": ["constants/*"],
+      "@testData": ["../testData"],
+      "@testData/*": ["../testData/*"]
+    }
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src", "types"],
+  "exclude": ["node_modules", "dist", "coverage"]
 }
