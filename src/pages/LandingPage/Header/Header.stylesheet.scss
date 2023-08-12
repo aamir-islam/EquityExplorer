@@ -1,3 +1,42 @@
-.main{
-  background-color: red;
+
+.header-content {
+  margin: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.nav-link{
+  position: relative;
+  color: black;
+  text-decoration: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -2px; // Adjust the distance of the underline from the text
+    left: 0;
+    width: 0;
+    height: 2px; // Adjust the thickness of the underline
+    background-color: black;
+    transition: width 0.3s ease;
+  }
+
+  &:hover {
+    color: red;
+
+    &::before {
+      width: 100%;
+      background-color: red;
+    }
+  }
+}
+
+.header-logo {
+  height: 1.5rem;
+  width: 2rem;
 }
