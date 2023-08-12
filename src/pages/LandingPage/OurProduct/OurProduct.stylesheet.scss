@@ -1,0 +1,17 @@
+.client-logos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Three equal-width columns */
+  grid-gap: 10px; /* Gap between rows and columns */
+
+}
+
+.feature-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 20rem;
+  width: 16rem;
+  border-radius: 2rem;
+}

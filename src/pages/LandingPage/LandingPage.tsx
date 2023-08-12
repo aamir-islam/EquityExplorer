@@ -4,6 +4,7 @@ import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { HeroSection } from "./HeroSection";
 import "./LandingPage.stylesheet.scss";
+import { OurProduct } from "./OurProduct";
 
 export const LandingPage: FC = () => {
   return (
@@ -11,6 +12,7 @@ export const LandingPage: FC = () => {
       <Header />
       <HeroSection />
       <ClientSection />
+      <OurProduct />
       <Footer />
     </div>
   );
