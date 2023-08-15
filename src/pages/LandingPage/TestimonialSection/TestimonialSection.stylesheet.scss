@@ -1,0 +1,32 @@
+.testimonial-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.img-circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Adjust to your preferred circle size */
+  height: 200px; /* Adjust to your preferred circle size */
+  margin: 0 auto;
+  position: relative;
+}
+
+.img-circle-container img {
+  position: absolute;
+  width: 50px; /* Adjust to your preferred image size */
+  height: 50px; /* Adjust to your preferred image size */
+  transform-origin: center center;
+}
+
+.img-circle-container img:nth-child(1) { transform: rotate(0deg) translate(100px) rotate(0deg); }
+.img-circle-container img:nth-child(2) { transform: rotate(45deg) translate(100px) rotate(-45deg); }
+.img-circle-container img:nth-child(3) { transform: rotate(90deg) translate(100px) rotate(-90deg); }
+.img-circle-container img:nth-child(4) { transform: rotate(135deg) translate(100px) rotate(-135deg); }
+.img-circle-container img:nth-child(5) { transform: rotate(180deg) translate(100px) rotate(-180deg); }
+.img-circle-container img:nth-child(6) { transform: rotate(225deg) translate(100px) rotate(-225deg); }
+.img-circle-container img:nth-child(7) { transform: rotate(270deg) translate(100px) rotate(-270deg); }
+.img-circle-container img:nth-child(8) { transform: rotate(315deg) translate(100px) rotate(-315deg); }
