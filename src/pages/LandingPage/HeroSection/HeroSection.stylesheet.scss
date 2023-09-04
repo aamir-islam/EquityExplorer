@@ -1,11 +1,22 @@
+@import "../../../common/styles/mixins";
+
 .hero-section-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .hero-section-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include common-content-style(3.6rem, 1.2rem);
 
+}
+
+.hero-section-button{
+  @include button-style;
+}
+
+
+
+.hero-section-img{
+  display: flex;
+  justify-content: flex-start;
 }

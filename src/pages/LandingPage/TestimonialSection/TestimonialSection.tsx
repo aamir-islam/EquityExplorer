@@ -12,6 +12,7 @@ import "./TestimonialSection.stylesheet.scss";
 
 export const TestimonialSection = () => {
   return (
+    <div className="page-content">
     <main className="container">
       <div className="hero-section-content">
         <h1>What our happy client say</h1>
@@ -35,5 +36,6 @@ export const TestimonialSection = () => {
         </div>
       </div>
     </main>
+    </div>
   );
 };

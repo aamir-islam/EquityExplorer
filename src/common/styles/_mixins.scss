@@ -1,0 +1,35 @@
+@mixin common-content-style($headingSize, $paragraphSize){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  h1{
+    font-size: $headingSize;
+  }
+  p{
+    font-size: $paragraphSize;
+    line-height: 2rem;
+  }
+}
+
+@mixin button-style {
+  border-radius: 3rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #2639ED;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #1A2EBF;
+  }
+}
+
+@mixin content-item($gap) {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+  margin-left: 10.3rem;
+}
