@@ -4,22 +4,26 @@ import { Link } from "react-router-dom";
 import myLogo from "../../../constants/images/logo/mylogo.png";
 export const Header: FC = () => {
   return (
-    <nav className="header-content">
-      <img src={myLogo} alt="my-logo" />
-      <div className="nav-item">
-        <Link className="nav-link" to="/path">
-          Home
-        </Link>
-        <Link className="nav-link" to="/path">
-          What We Do
-        </Link>
-        <Link className="nav-link" to="/path">
-          Service
-        </Link>
-        <Link className="nav-link" to="/path">
-          Contact
-        </Link>
-      </div>
-    </nav>
+    <div className="page-content">
+      <nav className="header-content">
+        <div className="logo">
+          <img src={myLogo} alt="my-logo" />
+        </div>
+        <div className="nav-item">
+          <Link className="nav-link" to="/path">
+            Home
+          </Link>
+          <Link className="nav-link" to="/path">
+            What We Do
+          </Link>
+          <Link className="nav-link" to="/path">
+            Service
+          </Link>
+          <Link className="nav-link" to="/path">
+            Contact
+          </Link>
+        </div>
+      </nav>
+    </div>
   );
 };
