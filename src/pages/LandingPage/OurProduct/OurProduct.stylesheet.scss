@@ -6,12 +6,13 @@
 
 
 .client-logos{
-  display: flex;
- 
-
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
 }
 
 .feature-card{
+  border: 2px solid gray;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +21,7 @@
   height: 20rem;
   width: 16rem;
   border-radius: 2rem;
+  text-align: center;
 }
 
 /* styles/main.css */
